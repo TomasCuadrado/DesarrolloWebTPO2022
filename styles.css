@@ -1,0 +1,229 @@
+/*
+#0D1821
+#344966
+#B4CDED
+#F0F4EF
+#BFCC94
+*/
+
+body {
+    padding:0;
+    background-color: #b4cded;
+    background-image: linear-gradient(111deg, #b4cded 0%, #e76d83 100%);
+    
+    text-align: center;
+}
+main{
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.navbar {
+    background-color: #0D1821;
+    --bs-navbar-color: #A9B3CEAB;
+    --bs-navbar-toggler-border-color:#a9b3ce83;
+    --bs-navbar-hover-color:
+}
+.nav-link:focus, .nav-link:hover, .navbar-brand:focus, .navbar-brand:hover  {
+    color:#b4cded;
+}
+
+.navbar-toggler-icon {
+    color: #b4cded85;
+    background-image: url("img/menu.png");
+}
+
+.color-texto {
+    color: #b1bddb;
+}
+
+.background {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("img/libros-vertical.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-filter::after {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0;
+}
+  
+.background-filter {
+    position: relative;
+}
+  
+.parallax {      
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sin-blur {
+    position: relative;
+    z-index: 1;
+}
+
+.principal {
+    padding: 0;
+}
+
+.resaltar{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.tarjeta{
+    margin: 1%;
+    padding: 0;
+    width: 45%;
+}
+
+.titulo{
+    font-size: 2.8rem;
+}
+
+.subtitulo {
+    font-size: 1.7rem;
+}
+
+.div-texto {
+    padding-bottom: 10rem;
+}
+
+
+
+@media (min-width: 991px){
+    body {
+
+        background-color: #b4cded;
+        background-image: linear-gradient(135deg, #b4cded 0%, #eaa7b2 100%);
+        padding: 0; 
+        margin: 0;    
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .navbar {
+        background-color: #0D1821;
+    }
+
+    .color-texto {
+        color: #A9B3CE;
+    }
+
+    .div-texto {
+        padding-bottom: 10rem;
+    }
+
+    .tarjeta{
+        margin: 1%;
+        padding: 0;
+        width: 18rem;
+        background: #EAEAEA;
+        transition: background-color 1s ease-out 100ms; 
+    }
+
+    .tarjeta:hover {
+        background-color: #C8D1DF;
+    } 
+
+    .background {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("img/biblioteca.webp");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .background-filter::after {
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%; height: 100%;
+        top: 0;
+    }
+      
+    .background-filter {
+        position: relative;
+    }
+      
+    .parallax {      
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .sin-blur {
+        position: relative;
+        z-index: 1;
+    }
+
+    .containder-fluid {
+        padding: 0;
+    }
+
+    #reservas {
+        width:100%;
+    }
+
+    .titulo{
+        font-size: 3rem;  
+    }
+
+    .subtitulo {
+        font-size: 1.9rem;
+    } 
+
+    .brillo img {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    }
+
+    .brillo img:hover {
+    -webkit-filter: brightness(100%);
+    } 
+
+    .banner{
+        background-image: url("img/fondo.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        width: 100%;
+        height: 15rem;
+    }
+
+    .ir-arriba{
+        color: #0D1821; 
+        border-color: #0D1821;
+    }
+
+    .ir-arriba:hover {
+        background-color: #0D1821;
+        border-color: #0D1821;
+        --bs-btn-hover-color: #b4cded;
+    }
+    .img-portada {
+        width: 286px;
+        height: 441px;
+    }
+}

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Biblioteca</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top shadow-lg pt-3 pb-3">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon icono"></span>
+        </button>
+        <a class="navbar-brand color-texto fs-3" href="#">The Rabbit Hole</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link color-texto" href="#disponibles"
+                >Disponibles</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-texto" href="#reservas">Reservas</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!--
+      <span class="badge text-bg-primary">Fantasía</span>
+      <span class="badge text-bg-secondary">Ficción</span>
+      <span class="badge text-bg-success">Poesía</span>
+      <span class="badge text-bg-danger">Romance</span>
+      <span class="badge text-bg-warning">Thriller</span>
+      <span class="badge text-bg-info">Aventura</span>
+      <span class="badge text-bg-light">Ensayo</span>
+      <span class="badge text-bg-dark">Terror</span>
+      -->
+      <!-- Sección Principal -->
+      <section
+        id="principal"
+        class="principal container-fluid img-fondo background background-filter parallax">
+        
+        <div class="container-fluid position-absolute top-50 start-50 translate-middle div-texto sin-blur">
+          
+          <h3 class="text-white titulo">
+            The <span class="rabbit">Rabbit</span> Hole
+          </h3>
+
+          <p class="text-white subtitulo">
+            Buscá los libros que te quieras y reservalos con sólo un click
+          </p>
+        </div>
+        
+      </section>
+
+      <!-- Lista de libros disponibles -->
+      <section id="disponibles">
+        <div class="container-fluid">
+          
+          <p class="row justify-content-center fs-6 text p-titulo p-3 mt-3 mb-0">
+            Nuestro <br /><span
+              class="resaltar row justify-content-center fs-2 text"
+              >CATÁLOGO</span
+            >
+          </p>
+
+          <div class="lista row justify-content-center">
+            
+            <div id="libro1D" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/el-camino-del-fuego_maria-oruna.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-primary">Fantasía</span>
+                <h4 class="card-title">El camino del fuego</h4>
+                <p class="card-text">Maria Oruña</p>
+                <button type="button" id="res1D" class="reservar btn btn-success">
+                  Reservar
+                </button>
+              </div>
+            </div>
+
+            <div id="libro2D" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/elcasoalaska.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-secondary">Ficción</span>
+                <h4 class="card-title">El caso alaska Sanders</h4>
+                <p class="card-text">Joel Dicker</p>
+                <button type="button" id="res2D" class="reservar btn btn-success">
+                  Reservar
+                </button>
+              </div>
+            </div>
+
+            <div id="libro3D" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/ellibronegrodelashoras.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-danger">Romance</span>
+                <h4 class="card-title">El libro negro de las horas</h4>
+                <p class="card-text">Eva G. Saenz de Urturi</p>
+                <button type="button" id="res3D" class="reservar btn btn-success">
+                  Reservar
+                </button>
+              </div>
+            </div>
+
+            <div id="libro4D" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/elmapadelosanhelos.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-warning">Thriller</span>
+                <h4 class="card-title">El mapa de los anhelos</h4>
+                <p class="card-text">Alice Kellen</p>
+                <button type="button" id="res4D" class="reservar btn btn-success">
+                  Reservar
+                </button>
+              </div>
+            </div>
+
+            <div id="libro5D" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/elmundoestaenventa.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-info">Aventura</span>
+                <h4 class="card-title">El mundo esta en venta</h4>
+                <p class="card-text">Javier Blas - Jack Farchy</p>
+                <button type="button" id="res5D" class="reservar btn btn-success">
+                  Reservar
+                </button>
+              </div>
+            </div>
+
+            <div id="libro6D" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/labestia.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">La bestia</h4>
+                <p class="card-text">Carmen Mola</p>
+                <button type="button" id="res6D" class="reservar btn btn-success">
+                  Reservar
+                </button>
+              </div>
+            </div>
+
+            <div id="libro7D" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/lasenoramarch.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-dark">Terror</span>
+                <h4 class="card-title">La señora March</h4>
+                <p class="card-text">Virginia Feito</p>
+                <button type="button" id="res7D" class="reservar btn btn-success">
+                  Reservar
+                </button>
+              </div>
+            </div>
+
+            <div id="libro8D" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/romasoyyo.webp"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-warning">Thriller</span>
+                <h4 class="card-title">Roma soy Yo</h4>
+                <p class="card-text">Santiago Posteguillo</p>
+                <button type="button" id="res8D" class="reservar btn btn-success">
+                  Reservar
+                </button>
+              </div>
+            </div>
+
+            <div id="libro9D" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/todasesascosas.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-danger">Romance</span>
+                <h4 class="card-title">Todas esas cosas que te dire mañana</h4>
+                <p class="card-text">Elisabet Benavent</p>
+                <button type="button" id="res9D" class="reservar btn btn-success">
+                  Reservar
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Lista de libros reservados -->
+      <section id="reservas" class="mt-3">
+        <div class="container-fluid">
+          <p class="justify-content-center fs-6 text p-titulo mt-3 mb-0">
+            Tus<br /><span class="resaltar row justify-content-center fs-2 text"
+              >RESERVAS</span
+            >
+          </p>
+
+          <div class="lista row justify-content-center">
+
+            <div id="libro1R" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/el-camino-del-fuego_maria-oruna.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-primary">Fantasía</span>
+                <h4 class="card-title">El camino del fuego</h4>
+                <p class="card-text">Maria Oruña</p>
+                <button type="button" id="can1" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div id="libro2R" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/elcasoalaska.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-secondary">Ficción</span>
+                <h4 class="card-title">El caso alaska Sanders</h4>
+                <p class="card-text">Joel Dicker</p>
+                <button type="button" id="can2" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div id="libro3R" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/ellibronegrodelashoras.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-danger">Romance</span>
+                <h4 class="card-title">El libro negro de las horas</h4>
+                <p class="card-text">Eva G. Saenz de Urturi</p>
+                <button type="button" id="can3" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div id="libro4R" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/elmapadelosanhelos.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-warning">Thriller</span>
+                <h4 class="card-title">El mapa de los anhelos</h4>
+                <p class="card-text">Alice Kellen</p>
+                <button type="button" id="can4" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div id="libro5R" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/elmundoestaenventa.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-info">Aventura</span>
+                <h4 class="card-title">El mundo esta en venta</h4>
+                <p class="card-text">Javier Blas - Jack Farchy</p>
+                <button type="button" id="can5" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div id="libro6R" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/labestia.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">La bestia</h4>
+                <p class="card-text">Carmen Mola</p>
+                <button type="button" id="can6" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div id="libro7R" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/lasenoramarch.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-dark">Terror</span>
+                <h4 class="card-title">La señora March</h4>
+                <p class="card-text">Virginia Feito</p>
+                <button type="button" id="can7" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div id="libro8R" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/romasoyyo.webp"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-warning">Thriller</span>
+                <h4 class="card-title">Roma soy Yo</h4>
+                <p class="card-text">Santiago Posteguillo</p>
+                <button type="button" id="can8" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div id="libro9R" class="card tarjeta brillo shadow-lg">
+              <img
+                src="img/portadas/todasesascosas.jpg"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-danger">Romance</span>
+                <h4 class="card-title">Todas esas cosas que te dire mañana</h4>
+                <p class="card-text">Elisabet Benavent</p>
+                <button type="button" id="can9" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+
+          </div>
+          <!-- 
+          <div class="row justify-content-center">
+            
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=1"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=2"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=3"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=4"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=5"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=6"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=1"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=2"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=3"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=4"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=5"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+
+            <div class="card tarjeta brillo shadow-lg">
+              <img
+                src="https://picsum.photos/630/900?random=6"
+                class="card-img-top img-portada"
+                alt="imagen_libro"
+              />
+
+              <div class="card-body">
+                <span class="badge text-bg-success">Poesía</span>
+                <h4 class="card-title">Título Libro</h4>
+                <p class="card-text">Nombre Autor</p>
+                <button type="button" class="cancelar btn btn-danger">
+                  Cancelar reserva
+                </button>
+              </div>
+            </div>
+          -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="nav footer d-flex justify-content-center mt-3 mb-3">
+      <a
+        class="btn btn-outline-dark ir-arriba p-4 rounded btn"
+        href="#principal"
+        >Volver Arriba</a
+      >
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
